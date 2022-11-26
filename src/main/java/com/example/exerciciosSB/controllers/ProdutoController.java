@@ -52,6 +52,7 @@ public class ProdutoController {
 	}
 
 	@GetMapping(path = "/{id}")
+	
 	public Optional<Produto> obterPrdutoPorId(@PathVariable int id) {
 		return produtoRepository.findById(id);
 	}
